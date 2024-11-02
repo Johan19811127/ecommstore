@@ -1,0 +1,27 @@
+
+.item_name{
+    font-size:1.3rem;
+    text-transform:uppercase;
+    font-weight:700;
+    font-family:Inter;
+    line-height:1.1;
+
+
+}
+
+.namediv{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.itecat{
+    background-color:#416cc4;
+    padding:5px 1rem;
+    line-height:1;
+    vertical-align:middle;
+    color:#fff;
+    border-radius:9px;
+    font-size:0.9em;
+    font-weight:600;
+}

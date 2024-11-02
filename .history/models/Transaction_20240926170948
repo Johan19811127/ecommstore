@@ -1,0 +1,7 @@
+import mongoose from 'mongoose';
+
+const TransactionSchema = new mongoose.Schema(
+  {
+    transactDate:{
+        timestamp: { type: Date, default: Date.now },
+    }

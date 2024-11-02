@@ -1,0 +1,55 @@
+
+  
+.card {
+    background: #fff;
+    padding: 1rem;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+     margin-top: 1rem;
+     padding:1rem;
+  }
+
+  .active {
+    background-image: url("/selected.png");
+    background-size: cover;
+  }
+
+  .header {
+    color: #2222 !important;
+    font-size: 1.3rem;
+  }
+
+  .desc{
+    font-size:0.9rem;
+    line-height:1.1;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+  }
+  .checkbox {
+    margin-top:auto;
+    margin-bottom:auto;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: 1px solid #999;
+    cursor: pointer;
+    &:hover {
+      border-color: #416cc4;
+    }
+  }
+  
+
+  .flex {
+    display:flex;
+    gap: 10px;
+    cursor: pointer;
+    &:hover {
+      .checkbox {
+        border-color:#416cc4;
+      }
+    }
+  }
+ 

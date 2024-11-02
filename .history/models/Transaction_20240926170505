@@ -1,0 +1,4 @@
+import mongoose from 'mongoose';
+
+const Transaction = new mongoose.Schema(
+  {

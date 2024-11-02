@@ -1,0 +1,1 @@
+Monte Vista Meat Market		Monte Vista Meat Market	Tuckshop Purchases and PTA	ZAR	7,000.00		7,000.00	Paid	10/02/2024	2024	Tuckjshop Purchases						091/010(11)	1186107863	146905	Expense			7,000.00	

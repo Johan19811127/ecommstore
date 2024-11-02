@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+
+
+
+.card {
+    background: #fff;
+    border:1px solid #e3e3e3;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+     margin-top: 1rem;
+     padding-bottom:1rem;
+  }
+
+  .active {
+    background-image: url("/selected.png");
+    background-size: cover;
+  }
+
+  .header {
+    color: #2222 !important;
+    font-size: 22px;
+  }
+  .checkbox {
+    margin-top:auto;
+    margin-bottom:auto;
+margin-left:1rem;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: 1px solid #999;
+    cursor: pointer;
+    &:hover {
+      border-color: #416cc4;
+    }
+  }
+  
+.product {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  &__header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: #444;
+    border: 1px solid #ddd;
+    padding-bottom: 0.3rem;
+    padding-top: 0.3rem;
+    background-color:#f9f9f9;
+    img {
+      width: 18px;
+    }
+  }
+  &__image {
+    display: grid;
+    padding-right:1rem;
+    grid-template-columns: 30px 150px 1fr;
+    gap: 10px;
+    img {
+      width: 100px;
+      height: 120px;
+      object-fit: cover;
+      align-self:center;
+      justify-self:center;
+    }
+    h1 {
+        font-family: "DM Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+      font-size: 1.4rem;
+      font-weight: 600;
+      
+    }
+    .grid {
+     
+      display: grid;
+      grid-template-columns: 1fr 25px 25px;
+      svg {
+        width: 22px;
+        height: 22px;
+        cursor: pointer;
+        fill: #666;
+        &:hover {
+          fill: #416cc4;
+        }
+      }
+    }
+  }
+  &__style {
+    display: flex;
+    align-items: start;
+    gap: 5px;
+   flex-direction:row;
+    width: 100%;
+    font-size: 0.9rem;
+    cursor: pointer;
+    span {
+        margin-left:20px;
+      font-weight: 500;
+ 
+    }
+   
+  }
+  &__priceQty {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    line-height:1.2;
+    &_price {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-right:40px;
+        font-size:0.9em;
+        font-family: "DM Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+            
+        .price{
+      margin-left:15px;
+            font-size: 1.2rem !important;
+            font-family:'Inter';
+            font-weight: 600;
+        }
+    
+     
+        }
+      
+        .priceBefore {
+          text-decoration: line-through;
+          color: #cccccc;
+          font-size: 14px;
+        }
+        .discount {
+          background: #ffecea;
+          color: #fa6338;
+          font-size: 14px;
+          border-radius: 5px;
+          padding: 2px 10px;
+          font-weight: 600;
+        }
+        
+    &_qty {
+        display: flex;
+        align-items: center;
+        margin-right:1rem;
+        font-size:1rem;
+        font-weight:600;
+        gap: 10px;
+        button {
+            padding:1px 7px;
+            border-radius:4px;
+            border-bottom:2px solid rgba(0,0,0,0.3);
+            border-right:1px solid rgba(0,0,0,0.3);
+            background-color:#b9b9b9;
+            box-shadow:1px 2px 3px 0px rgba(0,0,0,0.3) ;
+            font-family: "DM Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+
+font-weight:600;
+    
+            svg{
+                height:22px;
+                width:22px;
+            }
+        }
+        span {
+            font-size:1rem;
+            font-weight:600;
+            font-family:'Inter';
+
+        }
+      }
+  
+    &__shipping {
+      font-size: 12px;
+      color: #416cc4;
+    }
+      
+
+    @media (min-width: 500px) {
+      flex-direction: row;
+      justify-content: space-between;
+      
+   
+}
+  }
+}
+
+
+
+.notAvailable {
+  color: #f61733;
+  font-size: 15px;
+  padding-left: 2rem;
+  z-index: 2;
+}
+
+.row{
+display:flex;
+width:100%;
+flex-direction:row;
+align-items:center;
+justify-content:center;
+word-wrap:none;
+background-color:unset;
+
+span{
+    margin-left:10px
+}
+}

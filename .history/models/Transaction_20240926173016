@@ -1,0 +1,27 @@
+import mongoose from 'mongoose';
+
+const TransactionSchema = new mongoose.Schema(
+  {
+    transactDate:{
+        type: Date, default: Date.now ,
+        required:true
+    },
+
+    transactType:{
+        type:String,
+        required:true,
+    },
+    with:{
+        type:String,
+    },
+    product:{
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Product',
+     
+    },
+    
+});
+
+export default mongoose.models.Transaction || mongoose.model('Transaction', TransactionSchema);
+
+

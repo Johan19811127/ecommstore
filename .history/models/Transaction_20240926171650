@@ -1,0 +1,13 @@
+import mongoose from 'mongoose';
+
+const TransactionSchema = new mongoose.Schema(
+  {
+    transactDate:{
+        type: Date, default: Date.now ,
+        required:true
+    }
+
+    transactType:{
+        type:
+    }
+
